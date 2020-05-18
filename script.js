@@ -10,10 +10,10 @@ function eat_cake(str){
         var chars = str.substring(0, i + 1);
         var charsLength = chars.length;
         var nextChars = str.substring(i + 1, charsLength + (i + 1));
-        // if(chars.length > strLength / 2){
-        //     return 1;
-        //     break
-        // }
+        if(chars.length > strLength / 2){
+            return 1;
+            break
+        }
         if(chars == nextChars){
             if(strLength % charsLength == 0){
                 var block = chars;
